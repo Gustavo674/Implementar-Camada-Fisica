@@ -32,6 +32,4 @@ Este projeto implementa uma camada física de comunicação entre dois microcont
 
 ![image](https://github.com/user-attachments/assets/84121d3f-5219-4265-8bf6-a2a4790c5833)
 
-## Considerações
-- Este projeto foi testado em simulação. Em hardware real, a sincronização pode melhorar devido à precisão dos temporizadores.
-- Ajustes nos delays e na sincronização podem ser necessários dependendo do ambiente e do hardware utilizado.
+![video](https://drive.google.com/file/d/1MlB-3Is6MAPtyLfKhe4MwVPOms2z_b_R/view?usp=sharing)
