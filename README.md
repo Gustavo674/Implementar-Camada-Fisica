@@ -48,3 +48,5 @@ Durante os testes deste projeto em ambiente de simulação, observamos que os va
 Apesar das diferenças nos valores, o fato de o padrão ser reproduzido consistentemente indica que o sistema está operando corretamente. Em hardware real, onde os temporizadores e a detecção de bordas são mais precisos, esses problemas de sincronização tendem a ser significativamente reduzidos ou eliminados.
 
 Em resumo, o receptor está funcionando e lendo os sinais, mas devido aos atrasos inerentes à simulação, os bytes reconstruídos podem ser diferentes dos esperados. O padrão consistente nas leituras confirma que a lógica de decodificação está correta, mesmo que haja um pequeno desvio nos valores.
+
+Link para Tinkercad: https://www.tinkercad.com/things/9WXRNXlzDmG-mighty-snaget-turing
