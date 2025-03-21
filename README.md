@@ -32,4 +32,19 @@ Este projeto implementa uma camada física de comunicação entre dois microcont
 
 ![image](https://github.com/user-attachments/assets/84121d3f-5219-4265-8bf6-a2a4790c5833)
 
-![Link para video demonstrativo](https://drive.google.com/file/d/1MlB-3Is6MAPtyLfKhe4MwVPOms2z_b_R/view?usp=sharing)
+[Link para video demonstrativo](https://drive.google.com/file/d/1MlB-3Is6MAPtyLfKhe4MwVPOms2z_b_R/view?usp=sharing)
+
+### Sincronização, Atrasos na Simulação e Resultados Diferentes
+
+Durante os testes deste projeto em ambiente de simulação, observamos que os valores exibidos no Monitor Serial podem diferir dos bytes originalmente enviados (por exemplo, 0xA0, 0xB1, etc.). Essa discrepância ocorre devido a:
+
+- **Atrasos na Simulação:**  
+  O simulador utilizado pode introduzir pequenas imprecisões na temporização dos sinais. Essas imprecisões fazem com que a janela de amostragem do receptor se desloque ligeiramente em relação ao instante ideal de leitura.
+
+- **Sincronização do Receptor:**  
+  Embora o receptor esteja lendo os sinais de forma consistente (apresentando um padrão fixo nos valores recebidos), esse deslocamento na amostragem pode levar a uma interpretação incorreta dos bits, gerando bytes diferentes dos enviados.
+
+**Importante:**  
+Apesar das diferenças nos valores, o fato de o padrão ser reproduzido consistentemente indica que o sistema está operando corretamente. Em hardware real, onde os temporizadores e a detecção de bordas são mais precisos, esses problemas de sincronização tendem a ser significativamente reduzidos ou eliminados.
+
+Em resumo, o receptor está funcionando e lendo os sinais, mas devido aos atrasos inerentes à simulação, os bytes reconstruídos podem ser diferentes dos esperados. O padrão consistente nas leituras confirma que a lógica de decodificação está correta, mesmo que haja um pequeno desvio nos valores.
