@@ -32,4 +32,4 @@ Este projeto implementa uma camada física de comunicação entre dois microcont
 
 ![image](https://github.com/user-attachments/assets/84121d3f-5219-4265-8bf6-a2a4790c5833)
 
-![Link para video demonstrativo](https://drive.google.com/file/d/1MlB-3Is6MAPtyLfKhe4MwVPOms2z_b_R/view?usp=drive_link)
+![Link para video demonstrativo](https://drive.google.com/file/d/1MlB-3Is6MAPtyLfKhe4MwVPOms2z_b_R/view?usp=sharing)
